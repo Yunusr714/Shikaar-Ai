@@ -25,6 +25,7 @@ export const SPECIAL_OFFERS = [
         tag: 'LIMITED TIME',
         bgColor: '#1A1A2E',
         textColor: '#FFFFFF',
+        image: 'https://wallpaperaccess.com/full/83995.jpg',
     },
     {
         id: 'offer2',
@@ -32,8 +33,9 @@ export const SPECIAL_OFFERS = [
         subtitle: 'Get $10 for everyone who joins',
         tag: 'NEW',
         bgColor: '#F0EAFF',
-        textColor: '#1A1A2E',
+        textColor: '#ffffffff',
         action: 'Invite Now',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop',
     },
 ];
 
@@ -57,10 +59,10 @@ export const RECENT_RIDES = [
 ];
 
 export const TOP_DESTINATIONS = [
-    { id: 'td1', name: 'Airport Terminal 1', time: '45 mins', fare: '$35-42' },
-    { id: 'td2', name: 'National Stadium', time: '20 mins', fare: '$18-25' },
-    { id: 'td3', name: 'City Center Mall', time: '15 mins', fare: '$12-18' },
-    { id: 'td4', name: 'Railway Station', time: '30 mins', fare: '$22-28' },
+    { id: 'td1', name: 'Airport Terminal 1', time: '45 mins', fare: '$35-42', image: 'https://tse3.mm.bing.net/th/id/OIP.ARO0EXec82sH4y6sB9vWXAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3' },
+    { id: 'td2', name: 'National Stadium', time: '20 mins', fare: '$18-25', image: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=300&h=200&fit=crop' },
+    { id: 'td3', name: 'City Center Mall', time: '15 mins', fare: '$12-18', image: 'https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=300&h=200&fit=crop' },
+    { id: 'td4', name: 'Railway Station', time: '30 mins', fare: '$22-28', image: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=300&h=200&fit=crop' },
 ];
 
 export const VEHICLE_OPTIONS = [

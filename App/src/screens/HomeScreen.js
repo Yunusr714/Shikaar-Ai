@@ -9,6 +9,7 @@ import {
     FlatList,
     StatusBar,
     Dimensions,
+    Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -90,27 +91,36 @@ const HomeScreen = ({ navigation }) => {
                             style={[styles.offerCard, { backgroundColor: item.bgColor }]}
                             activeOpacity={0.9}
                         >
-                            {item.tag && (
-                                <Badge
-                                    label={item.tag}
-                                    color={COLORS.white}
-                                    bgColor={item.id === 'offer1' ? COLORS.primary : COLORS.success}
-                                    style={styles.offerBadge}
+                            {item.image && (
+                                <Image
+                                    source={{ uri: item.image }}
+                                    style={styles.offerImage}
+                                    resizeMode="cover"
                                 />
                             )}
-                            <Text style={[styles.offerTitle, { color: item.textColor }]}>{item.title}</Text>
-                            {item.subtitle && (
-                                <Text style={[styles.offerSubtitle, { color: item.textColor }]}>{item.subtitle}</Text>
-                            )}
-                            {item.code && (
-                                <TouchableOpacity style={styles.offerCodeRow}>
-                                    <Text style={styles.offerCode}>Use code {item.code}</Text>
-                                    <Ionicons name="arrow-forward" size={14} color={COLORS.white} />
-                                </TouchableOpacity>
-                            )}
-                            {item.action && (
-                                <Text style={styles.offerAction}>{item.action}</Text>
-                            )}
+                            <View style={styles.offerOverlay}>
+                                {item.tag && (
+                                    <Badge
+                                        label={item.tag}
+                                        color={COLORS.white}
+                                        bgColor={item.id === 'offer1' ? COLORS.primary : COLORS.success}
+                                        style={styles.offerBadge}
+                                    />
+                                )}
+                                <Text style={[styles.offerTitle, { color: item.textColor }]}>{item.title}</Text>
+                                {item.subtitle && (
+                                    <Text style={[styles.offerSubtitle, { color: item.textColor }]}>{item.subtitle}</Text>
+                                )}
+                                {item.code && (
+                                    <TouchableOpacity style={styles.offerCodeRow}>
+                                        <Text style={styles.offerCode}>Use code {item.code}</Text>
+                                        <Ionicons name="arrow-forward" size={14} color={COLORS.white} />
+                                    </TouchableOpacity>
+                                )}
+                                {item.action && (
+                                    <Text style={styles.offerAction}>{item.action}</Text>
+                                )}
+                            </View>
                         </TouchableOpacity>
                     )}
                     keyExtractor={(item) => item.id}
@@ -143,9 +153,11 @@ const HomeScreen = ({ navigation }) => {
                 <View style={styles.destinationGrid}>
                     {TOP_DESTINATIONS.slice(0, 2).map((dest) => (
                         <TouchableOpacity key={dest.id} style={styles.destCard} activeOpacity={0.8} onPress={handleSearch}>
-                            <View style={styles.destImage}>
-                                <Ionicons name="map" size={28} color={COLORS.primary} />
-                            </View>
+                            <Image
+                                source={{ uri: dest.image }}
+                                style={styles.destImage}
+                                resizeMode="cover"
+                            />
                             <Text style={styles.destName}>{dest.name}</Text>
                             <Text style={styles.destInfo}>{dest.time} • {dest.fare}</Text>
                         </TouchableOpacity>
@@ -261,10 +273,20 @@ const styles = StyleSheet.create({
     offerCard: {
         width: width * 0.55,
         borderRadius: SIZES.radiusMd,
-        padding: SIZES.lg,
         marginRight: SIZES.md,
-        minHeight: 150,
+        minHeight: 180,
+        overflow: 'hidden',
+    },
+    offerImage: {
+        ...StyleSheet.absoluteFillObject,
+        borderRadius: SIZES.radiusMd,
+    },
+    offerOverlay: {
+        flex: 1,
+        padding: SIZES.lg,
         justifyContent: 'flex-end',
+        backgroundColor: 'rgba(0,0,0,0.25)',
+        borderRadius: SIZES.radiusMd,
     },
     offerBadge: {
         marginBottom: SIZES.sm,
@@ -354,11 +376,8 @@ const styles = StyleSheet.create({
     },
     destImage: {
         width: '100%',
-        height: 80,
+        height: 90,
         borderRadius: SIZES.radius,
-        backgroundColor: COLORS.primaryBg,
-        alignItems: 'center',
-        justifyContent: 'center',
         marginBottom: SIZES.sm,
     },
     destName: {

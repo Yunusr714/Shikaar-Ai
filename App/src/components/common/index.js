@@ -5,6 +5,7 @@ import {
     StyleSheet,
     ActivityIndicator,
     View,
+    Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, FONTS, SIZES, SHADOWS } from '../../theme';
@@ -103,11 +104,10 @@ export const Avatar = ({ uri, size = SIZES.avatarMd, style }) => {
     return (
         <View style={[styles.avatar, { width: size, height: size, borderRadius: size / 2 }, style]}>
             {uri ? (
-                <View style={[styles.avatarInner, { width: size, height: size, borderRadius: size / 2, backgroundColor: COLORS.primaryBg }]}>
-                    <Text style={{ fontSize: size * 0.4, color: COLORS.primary }}>
-                        {String.fromCodePoint(0x1F464)}
-                    </Text>
-                </View>
+                <Image
+                    source={{ uri }}
+                    style={[styles.avatarInner, { width: size, height: size, borderRadius: size / 2 }]}
+                />
             ) : (
                 <View style={[styles.avatarInner, { width: size, height: size, borderRadius: size / 2, backgroundColor: COLORS.primaryBg }]}>
                     <Ionicons name="person" size={size * 0.5} color={COLORS.primary} />
