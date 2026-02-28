@@ -1,0 +1,88 @@
+FARE ESTIMATION AND PRICING — HOW FARES ARE CALCULATED
+========================================================
+
+1. OVERVIEW OF FARE ESTIMATION
+   - Cab service fares are calculated using a combination of fixed and variable components.
+   - The fare displayed before booking is an estimate; the final fare is based on actual trip parameters.
+   - The pricing model is designed to be transparent so that riders understand what they are paying for.
+
+2. FARE COMPONENTS
+
+   a) BASE FARE
+      - Every ride includes a base fare, which is a fixed minimum charge applied when the trip starts.
+      - The base fare varies by ride category (Economy, Sedan, SUV, Premium, etc.).
+      - It covers the initial cost of dispatching the vehicle.
+
+   b) DISTANCE CHARGE
+      - A per-kilometer (or per-mile) rate is applied based on the total distance of the trip.
+      - Distance is calculated using the actual route traveled, tracked by GPS.
+      - Longer trips have proportionally higher distance charges.
+
+   c) TIME CHARGE
+      - A per-minute rate applies for the duration of the trip.
+      - Time charges compensate for situations where the vehicle is moving slowly (traffic, congestion).
+      - The time-based component ensures fair driver earnings even in gridlock conditions.
+
+   d) PLATFORM FEE / SERVICE FEE
+      - A platform or service fee is added to each trip.
+      - This fee covers the technology infrastructure, customer support, and insurance costs.
+      - The service fee is typically a small fixed amount or a percentage of the fare.
+
+   e) TOLLS AND SURCHARGES
+      - If the route includes toll roads, bridges, or tunnels, the toll charges are added to the fare.
+      - Airport pickup or drop-off surcharges may also apply at certain locations.
+      - These charges are pass-through costs charged at face value.
+
+   f) TAXES
+      - Applicable local and national taxes (such as GST or sales tax) are added to the fare.
+      - Tax rates depend on government regulations in the rider's region.
+
+3. SURGE PRICING / DYNAMIC PRICING
+   - Surge pricing activates when ride demand exceeds driver supply in a particular area.
+   - The platform applies a multiplier (e.g., 1.5x, 2.0x, 3.0x) to the standard fare.
+   - The multiplier is displayed to the rider before booking, ensuring transparency.
+   - Surge pricing is designed to incentivize more drivers to come online in high-demand areas.
+   - Common surge scenarios include:
+     • Rush hours (morning and evening commutes).
+     • Bad weather (rain, storms).
+     • Large events (concerts, sports games, festivals).
+     • Late-night hours with fewer drivers available.
+   - Riders can choose to wait for the surge to reduce or proceed with the higher fare.
+   - Some platforms cap surge multipliers to prevent excessive pricing.
+
+4. UPFRONT PRICING
+   - Many modern cab platforms use upfront pricing, where riders see the total fare estimate before confirming.
+   - The upfront price is calculated based on the predicted route, distance, and time.
+   - If the actual route taken differs significantly (e.g., due to rider-requested detours), the fare may be adjusted.
+   - Upfront pricing provides transparency and helps riders budget their trips.
+
+5. SHARED / POOL RIDE PRICING
+   - Shared rides offer lower fares because the cost is split among multiple passengers.
+   - Each passenger pays based on their individual pickup-to-dropoff distance.
+   - The total fare is typically 20-50% less than a solo ride on the same route.
+   - The exact discount depends on how many co-riders are matched.
+
+6. SCHEDULED RIDE PRICING
+   - Fares for scheduled rides are estimated at the time of booking.
+   - The actual fare may differ if demand conditions change by the time the ride happens.
+   - Some platforms lock in the fare at the time of scheduling to protect riders from surge pricing.
+
+7. PAYMENT METHODS
+   - Cash — Pay the driver directly in cash at the end of the trip.
+   - Credit / Debit Card — Card details stored in the app for automatic payment.
+   - Digital Wallets — In-app wallet, Google Pay, Apple Pay, Paytm, or other digital wallets.
+   - UPI (Unified Payments Interface) — Direct bank-to-bank transfer using UPI apps.
+   - Corporate Accounts — Business accounts for employee travel with centralized billing.
+   - Promo Codes / Coupons — Riders can apply promotional discounts before booking.
+
+8. FARE DISPUTES AND ADJUSTMENTS
+   - If a rider believes the fare is incorrect, they can dispute it through the app's help center.
+   - Common reasons for fare adjustments include incorrect route tracking, toll errors, or ride quality issues.
+   - The platform reviews the trip data (GPS route, time, distance) and makes corrections if warranted.
+   - Adjusted amounts are credited back to the rider's payment method or added as ride credits.
+
+9. TIPS AND ADDITIONAL CHARGES
+   - Riders can optionally tip their driver through the app after the ride.
+   - Tips go directly to the driver and are not subject to platform commission.
+   - Some platforms allow riders to add a tip while rating the driver post-trip.
+   - Additional charges may apply for excessive waiting time at pickup or extra stops during the ride.

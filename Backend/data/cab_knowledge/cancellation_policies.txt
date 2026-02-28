@@ -1,0 +1,64 @@
+CANCELLATION POLICIES — RULES, FEES, AND PENALTIES
+====================================================
+
+1. OVERVIEW OF CANCELLATION POLICIES
+   - Cancellation policies exist to protect both riders and drivers from last-minute disruptions.
+   - The policies balance flexibility for riders with fair compensation for drivers' time and effort.
+   - Policies may vary by ride category, region, and platform.
+
+2. FREE CANCELLATION WINDOW
+   - Most platforms offer a free cancellation window immediately after booking.
+   - This window is typically 1 to 5 minutes after the ride is confirmed.
+   - During this period, the rider can cancel without any charges.
+   - Free cancellation is designed for accidental bookings or quick changes of plans.
+
+3. CANCELLATION FEES
+   - If the rider cancels after the free cancellation window, a cancellation fee may apply.
+   - Typical cancellation fees range from a small fixed amount to a percentage of the estimated fare.
+   - The fee compensates the driver for the time and fuel spent traveling toward the pickup location.
+   - The cancellation fee is charged to the rider's payment method on file.
+
+4. WHEN CANCELLATION FEES APPLY
+   - After the free cancellation window has expired.
+   - When the driver has already started traveling toward the pickup point.
+   - When the driver has arrived at the pickup location and the rider does not show up (no-show).
+   - For no-shows, a higher fee or the full fare may be charged depending on the platform.
+
+5. WHEN CANCELLATION FEES ARE WAIVED
+   - If the driver's estimated time of arrival (ETA) is significantly longer than originally displayed.
+   - If the driver is not moving toward the pickup location for an extended period.
+   - If the driver asks the rider to cancel (the rider should report this to get the fee waived).
+   - If there is a platform error or technical glitch causing the issue.
+   - If the assigned vehicle does not match the details shown in the app.
+
+6. DRIVER-SIDE CANCELLATION
+   - Drivers can also cancel rides after accepting them, though this is discouraged.
+   - If a driver cancels, the rider is not charged and the platform automatically searches for a new driver.
+   - Frequent cancellations by drivers result in penalties:
+     • Reduced ride assignment priority.
+     • Temporary suspension from the platform.
+     • Permanent deactivation for excessive cancellations.
+   - Valid reasons for driver cancellation include safety concerns, vehicle breakdown, or rider no-show at pickup.
+
+7. NO-SHOW POLICY
+   - A "no-show" occurs when the driver arrives at the pickup location but the rider does not appear.
+   - The driver typically waits for 3 to 5 minutes after arriving.
+   - If the rider does not board the vehicle within the waiting period, the driver can cancel the ride.
+   - The rider is charged a no-show fee, which may be higher than a standard cancellation fee.
+   - Some platforms also charge a per-minute waiting fee beyond the free waiting period.
+
+8. CANCELLATION OF SCHEDULED RIDES
+   - Scheduled rides can usually be cancelled for free up to 30 to 60 minutes before the pickup time.
+   - Cancelling within the final 30 minutes may incur a cancellation fee.
+   - Once a driver has been assigned to a scheduled ride, standard cancellation policies apply.
+
+9. REFUND PROCESS FOR CANCELLATIONS
+   - If a cancellation fee is charged in error, riders can dispute it through the app's help center.
+   - Refunds are typically processed within 3 to 7 business days.
+   - Refunds are credited back to the original payment method or added as app credits.
+
+10. IMPACT OF FREQUENT CANCELLATIONS BY RIDERS
+    - Riders who frequently cancel rides may receive warnings from the platform.
+    - Excessive cancellations may result in temporary restrictions on booking.
+    - This policy prevents abuse of the cancellation system and protects driver earnings.
+    - Platforms track cancellation rates and may flag accounts with unusually high cancellation ratios.

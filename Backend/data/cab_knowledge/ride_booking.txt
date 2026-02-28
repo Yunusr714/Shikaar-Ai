@@ -1,0 +1,70 @@
+RIDE BOOKING STAGES — COMPLETE GUIDE
+=====================================
+
+1. OPENING THE APP AND ENTERING PICKUP LOCATION
+   - The user opens the cab service application on their smartphone.
+   - The app uses GPS to auto-detect the current location as a pickup point.
+   - The user can also manually search and set a pickup address using the search bar.
+   - The app shows a pin on the map that the user can drag to fine-tune their exact pickup spot.
+
+2. ENTERING THE DESTINATION
+   - The user enters their destination address in the "Where to?" field.
+   - The app may suggest recent destinations or saved places (Home, Work) for quick selection.
+   - Multiple stops can be added for multi-destination trips on some platforms.
+   - The app calculates the estimated route, distance, and arrival time.
+
+3. CHOOSING A RIDE CATEGORY
+   - Available ride categories are displayed based on the route. Common categories include:
+     • Economy / Mini — Budget-friendly rides in compact cars.
+     • Sedan / Prime — Mid-range comfort rides in larger sedans.
+     • SUV / XL — Spacious vehicles for groups or extra luggage.
+     • Premium / Luxury — High-end vehicles with top-rated drivers.
+     • Shared / Pool — Share the ride with other passengers going in a similar direction at a lower price.
+     • Auto / Bike — Two-wheeler or three-wheeler options for short distances.
+   - Each category shows an estimated fare range, estimated arrival time of the vehicle, and expected trip duration.
+
+4. FARE ESTIMATION AND CONFIRMATION
+   - The app displays an upfront fare estimate before booking.
+   - The fare estimate is calculated using base fare + distance charge + time charge + applicable surcharges.
+   - The user reviews the fare and confirms the ride by tapping "Confirm Booking" or "Request Ride."
+   - Surge pricing may apply during peak hours, increasing the fare. The app will show a surge multiplier.
+   - Users can choose to schedule a ride for a future time instead of requesting immediately.
+
+5. WAITING FOR DRIVER ACCEPTANCE
+   - Once the ride is confirmed, the request is broadcast to nearby available drivers.
+   - Drivers see the pickup location, destination, and estimated fare before accepting.
+   - If no drivers accept within a timeout period, the user is notified and may retry or change the ride category.
+   - The matching algorithm considers driver proximity, direction of travel, and driver rating.
+
+6. RIDE CONFIRMED — DRIVER EN ROUTE
+   - A driver accepts the ride and the user receives a confirmation notification.
+   - The app shows the driver's name, photo, vehicle details (make, model, color, license plate), and rating.
+   - A real-time map shows the driver's live location moving toward the pickup point.
+   - The user receives an estimated time of arrival (ETA) for the driver.
+   - The user can contact the driver via in-app call or chat to coordinate pickup.
+
+7. PICKUP AND RIDE START
+   - The driver arrives at the pickup location and waits for the rider.
+   - Some platforms give the driver a waiting time (usually 3-5 minutes) before they can cancel.
+   - The rider verifies the vehicle details (license plate, car model) before getting in.
+   - On some platforms, the rider must share a PIN or OTP with the driver to start the ride.
+   - The trip begins and the app starts tracking the route in real-time.
+
+8. DURING THE RIDE
+   - The app shows a live map with the route being followed.
+   - The rider can share their live trip status with trusted contacts for safety.
+   - The rider can report any issues during the ride using the in-app safety toolkit.
+   - Route changes are possible — the driver or rider can suggest alternative routes.
+
+9. ARRIVING AT THE DESTINATION AND PAYMENT
+   - The driver drops off the rider at the destination.
+   - The final fare is calculated based on the actual distance and time traveled.
+   - Payment is processed automatically if a digital payment method is linked (credit card, wallet, UPI).
+   - Cash payment is also an option on many platforms.
+   - The rider receives a digital receipt via email or in-app.
+
+10. RATING AND FEEDBACK
+    - After the trip, the rider is prompted to rate the driver (1 to 5 stars).
+    - The rider can leave optional text feedback or report issues.
+    - Drivers also rate riders to maintain a two-way accountability system.
+    - Ratings affect future ride matching and driver visibility on the platform.

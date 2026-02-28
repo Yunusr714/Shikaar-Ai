@@ -1,0 +1,68 @@
+DRIVER ASSIGNMENT LOGIC — HOW DRIVERS ARE MATCHED
+===================================================
+
+1. OVERVIEW OF DRIVER ASSIGNMENT
+   - When a rider requests a ride, the platform's matching algorithm selects the best available driver.
+   - The goal is to minimize wait times, optimize route efficiency, and maintain service quality.
+   - Assignment is automatic — neither riders nor drivers manually choose each other for standard rides.
+
+2. KEY FACTORS IN DRIVER MATCHING
+   The matching algorithm considers multiple factors:
+
+   a) PROXIMITY
+      - The algorithm prioritizes drivers who are geographically closest to the rider's pickup location.
+      - GPS coordinates are used to calculate real-time distance between available drivers and the pickup point.
+      - Closer drivers mean shorter wait times for the rider.
+
+   b) DIRECTION OF TRAVEL
+      - A driver who is already heading in the direction of the pickup point may be preferred over a closer driver going the opposite way.
+      - This reduces deadheading (driving without a passenger) and improves driver earnings per hour.
+
+   c) DRIVER RATING
+      - Drivers with higher average ratings may receive priority for premium ride categories.
+      - Consistently low-rated drivers may receive fewer ride requests.
+      - Ratings reflect passenger feedback from previous trips.
+
+   d) DRIVER AVAILABILITY AND STATUS
+      - Only drivers who are online, available, and not currently on another trip are considered.
+      - Drivers who just completed a trip nearby may be immediately re-assigned.
+      - Drivers can set themselves as unavailable (offline) at any time.
+
+   e) VEHICLE TYPE MATCH
+      - The algorithm matches the rider's selected ride category with drivers having compatible vehicles.
+      - A rider requesting an SUV will not be matched with a driver in a compact car.
+      - Vehicle details are registered and verified during driver onboarding.
+
+   f) ACCEPTANCE RATE
+      - Drivers with higher acceptance rates (fewer rejected requests) may get priority.
+      - Consistently declining ride requests may lower a driver's assignment priority.
+
+3. THE ASSIGNMENT PROCESS — STEP BY STEP
+   Step 1: Rider confirms a ride request.
+   Step 2: The platform identifies all available drivers within a search radius (typically 3-5 km).
+   Step 3: The matching algorithm scores each driver based on proximity, direction, rating, and vehicle match.
+   Step 4: The ride request is sent to the highest-scoring driver first.
+   Step 5: The driver has a limited time window (usually 15-30 seconds) to accept or decline.
+   Step 6: If declined or expired, the request moves to the next best driver.
+   Step 7: If no driver accepts within the timeout cycle, the rider is notified and may choose to retry.
+
+4. SHARED / POOL RIDE ASSIGNMENT
+   - For shared rides, the algorithm also considers existing passengers' routes.
+   - A driver with a current passenger going in a similar direction may be matched with a new rider.
+   - The platform calculates detour time and only matches if the added time is within acceptable limits.
+   - Each passenger's fare is adjusted based on their individual distance.
+
+5. SCHEDULED RIDE ASSIGNMENT
+   - For scheduled (pre-booked) rides, driver assignment does not happen immediately.
+   - The platform assigns a driver closer to the scheduled pickup time (usually 15-30 minutes before).
+   - If no driver is available at the scheduled time, the rider is notified in advance.
+
+6. DRIVER REASSIGNMENT
+   - If an assigned driver cancels after accepting, the platform automatically searches for a replacement.
+   - The rider is notified of the reassignment and receives updated driver details.
+   - Frequent cancellations by a driver can result in penalties or temporary suspension.
+
+7. TRANSPARENCY FOR RIDERS
+   - Riders cannot choose a specific driver for standard rides.
+   - After assignment, the rider sees the driver's name, photo, rating, and vehicle details.
+   - Some platforms allow riders to request preferred drivers for future rides (a "favorite driver" feature).

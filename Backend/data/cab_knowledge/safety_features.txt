@@ -1,0 +1,99 @@
+PASSENGER SAFETY FEATURES — PROTECTION AND TRUST
+==================================================
+
+1. OVERVIEW OF SAFETY FEATURES
+   - Cab service platforms invest heavily in safety infrastructure to protect riders and drivers.
+   - Safety features operate before, during, and after every ride.
+   - The goal is to create a trusted transportation environment where riders feel secure.
+
+2. PRE-RIDE SAFETY MEASURES
+
+   a) DRIVER VERIFICATION
+      - All drivers undergo a background verification check before being allowed on the platform.
+      - Checks typically include criminal record screening, driving history review, and identity verification.
+      - Drivers must submit valid government-issued identification and a commercial driving license.
+      - Vehicle inspection and registration verification ensure roadworthy vehicles.
+
+   b) VEHICLE VERIFICATION
+      - Each vehicle is inspected for safety compliance (brakes, tires, lights, seatbelts).
+      - Vehicle details (make, model, color, license plate) are registered on the platform.
+      - Riders can verify the vehicle details before boarding to ensure they are getting into the correct car.
+
+   c) RIDE PIN / OTP VERIFICATION
+      - Some platforms require the rider to share a unique PIN or OTP with the driver before the ride starts.
+      - This ensures the correct rider is boarding the correct vehicle.
+      - The PIN is displayed on the rider's app and must be verbally shared with the driver.
+
+3. DURING-RIDE SAFETY FEATURES
+
+   a) REAL-TIME GPS TRACKING
+      - Every ride is tracked in real-time using GPS.
+      - The platform monitors the route being taken and can detect significant deviations.
+      - Riders can see the live route on their app during the trip.
+
+   b) SHARE MY RIDE / LIVE TRIP SHARING
+      - Riders can share their live trip status with trusted contacts (family members, friends).
+      - The shared link shows the vehicle details, driver information, and live map tracking.
+      - Contacts can monitor the trip in real-time without needing the app installed.
+      - This feature significantly enhances rider safety, especially for solo travelers and late-night rides.
+
+   c) SOS / EMERGENCY BUTTON
+      - An SOS or emergency button is available in the app during every ride.
+      - Pressing the SOS button immediately alerts the platform's safety team.
+      - On some platforms, it also directly connects the rider to local emergency services (police, ambulance).
+      - The platform shares the rider's live location, trip details, and driver information with responders.
+      - The SOS feature is designed for situations where the rider feels unsafe or faces a medical emergency.
+
+   d) RIDE MONITORING AND ANOMALY DETECTION
+      - Platforms use algorithms to detect unusual ride patterns (unexpected stops, route deviations, prolonged idle time).
+      - If an anomaly is detected, the platform may proactively reach out to the rider via a safety check notification.
+      - Riders can respond to safety check prompts to confirm they are okay.
+
+   e) IN-APP COMMUNICATION
+      - Communication between riders and drivers happens through the app (masked phone numbers or in-app chat).
+      - Personal phone numbers are not shared, protecting privacy for both parties.
+      - Call and chat logs are stored for dispute resolution if needed.
+
+4. POST-RIDE SAFETY FEATURES
+
+   a) RATING AND REVIEW SYSTEM
+      - After each ride, both riders and drivers rate each other.
+      - Low-rated drivers are flagged for review and may be removed from the platform.
+      - Riders can report specific safety concerns through the app.
+
+   b) INCIDENT REPORTING
+      - The app provides an option to report safety incidents after the ride.
+      - Reports are reviewed by the platform's safety team.
+      - Serious incidents may result in immediate driver suspension pending investigation.
+
+   c) TRIP HISTORY AND RECEIPTS
+      - All trip details are saved in the rider's account (route taken, fare, driver details).
+      - This provides a verifiable record that can be used for dispute resolution or safety investigations.
+
+5. SPECIAL SAFETY FEATURES
+
+   a) WOMEN'S SAFETY FEATURES
+      - Some platforms offer women-specific safety features such as preferred female drivers.
+      - Enhanced safety checks and more frequent ride monitoring for late-night rides.
+      - Quick-access helpline numbers within the app.
+
+   b) TRUSTED CONTACTS
+      - Riders can set up a list of trusted contacts in the app.
+      - Automated notifications can be sent to these contacts when a ride starts or ends.
+      - Some platforms allow automatic trip sharing with trusted contacts for every ride.
+
+   c) SPEED MONITORING
+      - The platform monitors the vehicle's speed during the ride.
+      - If the vehicle exceeds speed limits significantly, a warning may be sent to the driver.
+      - Riders are notified if unsafe speeds are detected.
+
+   d) COVID-19 AND HEALTH SAFETY PROTOCOLS
+      - Post-pandemic, many platforms implemented health safety features.
+      - These include mandatory mask policies, vehicle sanitization tracking, and health self-declarations.
+      - Riders can report if a driver is not following health safety guidelines.
+
+6. INSURANCE AND FINANCIAL PROTECTION
+   - Many cab platforms provide ride insurance covering accidents during the trip.
+   - Coverage typically includes medical expenses for injuries sustained during the ride.
+   - Lost item recovery assistance is also available through the app.
+   - Riders can file insurance claims through the app's help center.

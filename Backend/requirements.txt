@@ -1,0 +1,24 @@
+# ── Web Framework ────────────────────────────────────────────────────────────
+fastapi[standard]>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# ── LangChain RAG ────────────────────────────────────────────────────────────
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.1.0
+
+# ── Vector Database ──────────────────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── Embeddings ───────────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+
+# ── Google Gemini LLM ────────────────────────────────────────────────────────
+google-generativeai>=0.8.0
+
+# ── Configuration ────────────────────────────────────────────────────────────
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# ── Testing Interface ───────────────────────────────────────────────────────
+streamlit>=1.38.0
