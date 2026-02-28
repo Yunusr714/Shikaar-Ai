@@ -1,19 +1,83 @@
 import axios from 'axios';
+import { Platform } from 'react-native';
 import { VEHICLE_OPTIONS, DRIVER_INFO, RIDE_HISTORY, USER_PROFILE } from '../data/mockData';
+import { getToken } from './auth';
 
-// Base axios instance - point to your backend later
+// Base axios instance — points to the FastAPI backend
+const BASE_URL = Platform.select({
+    android: 'http://192.168.137.212:8000',
+    ios: 'http://localhost:8000',
+    default: 'http://localhost:8000',
+});
+
 const api = axios.create({
-    baseURL: 'https://api.shikaar.ai/v1', // placeholder
-    timeout: 10000,
+    baseURL: BASE_URL,
+    timeout: 15000,
     headers: {
         'Content-Type': 'application/json',
     },
 });
 
-// Mock delay to simulate network
+// Auth interceptor — attach JWT token to all requests
+api.interceptors.request.use(async (config) => {
+    const token = await getToken();
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+});
+
+// Mock delay to simulate network (for endpoints still using mock)
 const mockDelay = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// Mock API functions
+// ── Real API functions ──────────────────────────────────────────────────
+
+export const getChatResponse = async (message) => {
+    const { data } = await api.post('/api/chat', { query: message });
+    return {
+        success: true,
+        data: {
+            response: data.answer,
+            timestamp: new Date().toISOString(),
+        },
+    };
+};
+
+export const getUserProfile = async () => {
+    try {
+        const { data } = await api.get('/api/users/me');
+        return { success: true, data };
+    } catch {
+        // Fallback to mock
+        await mockDelay(400);
+        return { success: true, data: USER_PROFILE };
+    }
+};
+
+export const updateUserProfile = async (updates) => {
+    try {
+        const { data } = await api.put('/api/users/me', updates);
+        return { success: true, data };
+    } catch {
+        await mockDelay(800);
+        return { success: true, data: { ...USER_PROFILE, ...updates } };
+    }
+};
+
+export const getRideHistory = async (page = 1, pageSize = 20) => {
+    try {
+        const { data } = await api.get('/api/rides/history', {
+            params: { page, page_size: pageSize },
+        });
+        return { success: true, data: data.rides };
+    } catch {
+        await mockDelay(600);
+        return { success: true, data: RIDE_HISTORY };
+    }
+};
+
+// ── Mock API functions (booking flow — still simulated) ─────────────────
+
 export const searchRides = async (pickup, drop) => {
     await mockDelay(800);
     return {
@@ -51,41 +115,6 @@ export const getRideStatus = async (bookingId) => {
             eta: '2 mins',
             distance: '0.5 km',
         },
-    };
-};
-
-export const getChatResponse = async (message) => {
-    await mockDelay(1200);
-    return {
-        success: true,
-        data: {
-            response: 'This is a mock response from the AI assistant.',
-            timestamp: new Date().toISOString(),
-        },
-    };
-};
-
-export const getRideHistory = async () => {
-    await mockDelay(600);
-    return {
-        success: true,
-        data: RIDE_HISTORY,
-    };
-};
-
-export const getUserProfile = async () => {
-    await mockDelay(400);
-    return {
-        success: true,
-        data: USER_PROFILE,
-    };
-};
-
-export const updateUserProfile = async (updates) => {
-    await mockDelay(800);
-    return {
-        success: true,
-        data: { ...USER_PROFILE, ...updates },
     };
 };
 

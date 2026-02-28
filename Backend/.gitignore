@@ -3,6 +3,9 @@ venv/
 .venv/
 env/
 
+# Database
+*.db
+
 # Environment variables
 .env
 

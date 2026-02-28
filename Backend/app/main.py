@@ -13,7 +13,12 @@ from typing import AsyncIterator
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.auth import router as auth_router
 from app.api.chat import router as chat_router
+from app.api.rides import router as rides_router
+from app.api.users import router as users_router
+from app.db.database import init_db
+from app.db.models import User, RideHistory  # noqa: F401 – ensure tables are registered
 from app.rag.retriever import load_retriever
 
 logging.basicConfig(
@@ -27,6 +32,9 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
     """Warm-load the retriever so the first request is fast."""
+    logger.info("⏳ Initialising database…")
+    init_db()
+    logger.info("✅ Database ready.")
     logger.info("⏳ Loading vector store retriever…")
     load_retriever()
     logger.info("✅ Retriever loaded — server is ready.")
@@ -56,7 +64,10 @@ app.add_middleware(
 )
 
 # ── Routers ─────────────────────────────────────────────────────────────
+app.include_router(auth_router)
 app.include_router(chat_router)
+app.include_router(users_router)
+app.include_router(rides_router)
 
 
 # ── Health check ────────────────────────────────────────────────────────

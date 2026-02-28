@@ -16,6 +16,14 @@ sentence-transformers>=3.0.0
 # ── Google Gemini LLM ────────────────────────────────────────────────────────
 google-generativeai>=0.8.0
 
+# ── Database ─────────────────────────────────────────────────────────────
+sqlmodel>=0.0.22
+
+# ── Auth / Security ──────────────────────────────────────────────────────
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+email-validator>=2.0.0
+
 # ── Configuration ────────────────────────────────────────────────────────────
 pydantic-settings>=2.0.0
 python-dotenv>=1.0.0

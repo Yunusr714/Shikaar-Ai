@@ -30,8 +30,17 @@ def _get_model() -> GenerativeModel:
                 "GEMINI_API_KEY is not set. Please add it to your .env file."
             )
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        _model = genai.GenerativeModel(settings.GEMINI_MODEL)
-        logger.info("Gemini model '%s' initialised.", settings.GEMINI_MODEL)
+        _model = genai.GenerativeModel(
+            settings.GEMINI_MODEL,
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json",
+                temperature=0.7,
+                max_output_tokens=1024,
+            ),
+        )
+        logger.info(
+            "Gemini model '%s' initialised with JSON mode.", settings.GEMINI_MODEL
+        )
     return _model
 
 

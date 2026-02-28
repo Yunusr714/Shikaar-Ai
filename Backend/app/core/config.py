@@ -24,6 +24,14 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    # ── Auth / Security ──────────────────────────────────────────────────
+    SECRET_KEY: str = "change-me-to-a-random-secret-in-production"
+    JWT_ALGORITHM: str = "HS256"
+    JWT_EXPIRATION_MINUTES: int = 60 * 24 * 7  # 7 days
+
+    # ── Database ─────────────────────────────────────────────────────────
+    DATABASE_URL: str = f"sqlite:///{_PROJECT_ROOT / 'shikaar.db'}"
+
     # ── LLM ──────────────────────────────────────────────────────────────
     GEMINI_API_KEY: str = ""
     GEMINI_MODEL: str = "gemini-2.5-flash"

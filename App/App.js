@@ -12,6 +12,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import AppNavigator from './src/navigation/AppNavigator';
+import useAppStore from './src/store/useAppStore';
 
 // Suppress known warnings
 LogBox.ignoreLogs([
@@ -26,6 +27,12 @@ export default function App() {
     Poppins_600SemiBold,
     Poppins_700Bold,
   });
+
+  const checkAuth = useAppStore((state) => state.checkAuth);
+
+  useEffect(() => {
+    checkAuth();
+  }, []);
 
   if (!fontsLoaded) {
     return (

@@ -18,11 +18,14 @@ import useAppStore from '../store/useAppStore';
 const ProfileScreen = ({ navigation }) => {
     const insets = useSafeAreaInsets();
     const user = useAppStore((state) => state.user);
+    const logout = useAppStore((state) => state.logout);
     const [notifications, setNotifications] = React.useState(true);
 
     const handleMenuPress = (item) => {
         if (item.route === 'RideHistory') {
             navigation.navigate('RideHistory');
+        } else if (item.action === 'logout') {
+            logout();
         }
     };
 

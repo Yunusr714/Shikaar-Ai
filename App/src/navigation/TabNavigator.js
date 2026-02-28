@@ -198,6 +198,7 @@ const styles = StyleSheet.create({
     },
     tabIconActive: {
         backgroundColor: COLORS.primaryBg,
+        borderRadius: 18,
     },
     tabLabel: {
         fontSize: SIZES.fontXs,
